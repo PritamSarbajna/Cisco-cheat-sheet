@@ -14,3 +14,7 @@
 |`switchport access vlan`|Sets the VLAN that the interface belongs to| | |
 |`switchport trunk encapsulation dot1q`|Specifies 802.1Q encapsulation on the trunk link| | |
 |`switchport access`|Assigns this port to a VLAN| | |
+|`vlan vlan-id [name vlan-name]`|Configures a specific VLAN name (1 to 32 characters)| | |
+|`switchport mode { access \| trunk }` |Configures the VLAN membership mode of a port. The access port is set to access unconditionally and operates as a non-trunking, single VLAN interface that sends and receives non-encapsulated (non-tagged) frames. An access port can be assigned to only one VLAN. The trunk port sends and receives encapsulated (tagged) frames that identify the VLAN of origination. A trunk is a point-to-point link between two switches or between a switch and a router| | |
+|`switchport trunk`|Sets the trunk characteristics when the interface is in trunking mode. In this mode, the switch supports simultaneous tagged and untagged traffic on a port| | |
+|`encapsulation dot1q vlan-id`|A configuration mode command that defines the matching criteria to map 802.1Q frames ingress on an interface to the appropriate service instance| | |
